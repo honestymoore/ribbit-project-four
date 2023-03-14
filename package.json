@@ -27,7 +27,7 @@
     "serve-favicon": "^2.5.0"
   },
   "scripts": {
-    "start": "node setver.js",
+    "start": "node server.js",
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
@@ -49,5 +49,6 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
-  }
+  },
+  "proxy": "http://mybackend.mycloudidehost.c9.io"
 }

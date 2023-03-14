@@ -2,8 +2,6 @@ import { getToken } from './users-service'
 
 const BASE_URL = "https://ribbit-server.onrender.com"
 
-const BASE_URL = 'https://ribbit-project-four.herokuapp.com'
-
 export function createComment(data){
     const token = getToken()
     console.log(data)
