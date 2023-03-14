@@ -2,7 +2,7 @@ import { getToken } from "./users-service"
 
 export function indexThread() {
     const token = getToken()
-    return fetch("http://localhost:3001/api/thread", {
+    return fetch("/api/thread", {
         method: "GET",
         headers: {
             Authorization: `Bearer ${token}`,
@@ -10,11 +10,9 @@ export function indexThread() {
     })
 }
 
-
-
 export function createThread(data) {
     const token = getToken()
-    return fetch("http://localhost:3001/api/thread/new",{
+    return fetch("/api/thread/new",{
         method: "POST",
         headers: {
             Accept: "application/json",
@@ -25,10 +23,9 @@ export function createThread(data) {
     })
 }
 
-
 export function deleteThread(threadId) {
     const token = getToken()
-    return fetch(`http://localhost:3001/api/thread/${threadId}`, {
+    return fetch(`/api/thread/${threadId}`, {
         method: "DELETE",
         headers : {
             Authorization: `Bearer ${token}`
@@ -38,7 +35,7 @@ export function deleteThread(threadId) {
 
 export function updateThread(data, threadId) {
     const token = getToken()
-    return fetch(`http://localhost:3001/api/thread/${threadId}`, {
+    return fetch(`/api/thread/${threadId}`, {
         method: "PATCH",
         headers : {
             Accept: "application/json",
@@ -54,7 +51,7 @@ export function updateThread(data, threadId) {
 
 export function showThread(threadId) {
     const token = getToken()
-    return fetch(`http://localhost:3001/api/thread/${threadId}`, {
+    return fetch(`/api/thread/${threadId}`, {
         method: "GET",
         headers : {
             Authorization: `Bearer ${token}`,

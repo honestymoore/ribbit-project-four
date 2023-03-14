@@ -1,9 +1,8 @@
 import { getToken } from './users-service'
 
-export function createComment(data, threadId){
+export function createComment(data){
     const token = getToken()
     console.log(data)
-    // console.log(threadId)
 return fetch (`/api/comment/new`, {
     method: 'POST',
     headers:{
