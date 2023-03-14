@@ -44,3 +44,12 @@
   cursor: pointer;
   margin: 3px;
 }
+
+main{
+  background-color: #F3EBCF;
+}
+
+div{
+  border-radius: 5px;
+}
+

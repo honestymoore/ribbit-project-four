@@ -1,6 +1,6 @@
 import { getToken } from "./users-service"
 
-const BASE_URL = 'https://ribbit-project-four.herokuapp.com'
+const BASE_URL = "https://ribbit-server.onrender.com"
 
 export function createPost(data){
     const token = getToken()

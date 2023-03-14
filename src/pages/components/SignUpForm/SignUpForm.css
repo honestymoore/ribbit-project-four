@@ -1,5 +1,6 @@
-/* .form-floating {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-} */
+#bgc{
+    background-color: white;
+}
+#buttonClr{
+    background-color: whitesmoke;
+}

@@ -20,7 +20,7 @@ export default function ThreadCard ({thread, setThreadArr}) {
     }
 
     return ( 
-        <div className="container border rounded-4 shadow-sm my-3">
+        <div className="container border rounded-4 shadow-sm my-3" id="thread-container">
     
         <h4 className="my-2">{thread.topic}</h4>
 

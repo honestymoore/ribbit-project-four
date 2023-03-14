@@ -3,6 +3,7 @@
     color: #779d79;
     font-size: 35px;
     margin-left: 30px;
+    background-color:#212529;
 }
 
 .greeting {
@@ -12,6 +13,7 @@
 
 .nav-link {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
+    background-color:#212529;
 }
 
 .menu-container {
@@ -25,4 +27,12 @@
     border-radius: 5px;
     color: #779d79;
     border-color: #779d79;
+}
+
+#collapse  {
+    background-color: #212529;   
+}
+
+#background{
+    background-color:#212529;
 }

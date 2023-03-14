@@ -21,7 +21,7 @@ export default function NavBar({ user, setUser }) {
 	return (
 		<>
 			<nav className="navbar bg-dark fluid py-1 d-flex">
-				<div>
+				<div id="background">
 
 					<div className="nav-link " id="logo-name" onClick={handleClick}>ribbit 🐸</div>
 					<i className="fas fa-frog"></i>

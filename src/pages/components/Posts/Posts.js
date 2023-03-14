@@ -52,7 +52,7 @@ export default function Posts({post, thread, user, setThreadArr}) {
         return (
                   
             <>
-            <div className="container border rounded-4 shadow-sm my-4">
+            <div className="container border rounded-4 shadow-sm my-4" id="white">
                 <h3 className="mt-2">{post.category}</h3>
                 <hr></hr>
                 <p>{post.title}</p>
@@ -84,7 +84,7 @@ export default function Posts({post, thread, user, setThreadArr}) {
           return (
 
         <>
-            <div className="container border rounded-4 shadow-sm my-4">
+            <div className="container border rounded-4 shadow-sm my-4" id="white">
                 <h3 className="mt-2">{post.category}</h3>
                 <hr></hr>
                 <p>{post.title}</p>

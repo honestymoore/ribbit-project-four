@@ -5,3 +5,10 @@ h3 {
 p {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
+.container{
+    background-color: white;
+}
+
+#white{
+    background-color: white;
+}

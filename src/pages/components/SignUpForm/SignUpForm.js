@@ -51,8 +51,8 @@ export default class SignUpForm extends Component {
     render() {
         const disable = this.state.password !== this.state.confirm
         return (
-            <div className='d-flex justify-content-center col'>
-                <div className='signup-form form-container'>
+            <div className='d-flex justify-content-center col' >
+                <div className='signup-form form-container' id="bgc">
                     <form autoComplete='off' onSubmit={this.handleSubmit}>
                         <div className="form-floating">
                             <input
@@ -66,7 +66,7 @@ export default class SignUpForm extends Component {
                             />
                             <label className='form-label'>Name</label>
                         </div>
-                        <div className="form-floating">
+                        <div className="form-floating" > 
                             <input
                                 className='form-control'
                                 type='email'
@@ -102,7 +102,7 @@ export default class SignUpForm extends Component {
                             />
                             <label className='form-label'>Confirm</label>
                         </div>
-                        <button className="btn btn-success mx-3 my-2" type='submit' disabled={disable}>Sign Up</button>
+                        <button className="btn btn-success mx-3 my-2" type='submit' disabled={disable} id='buttonCtrl'>Sign Up</button>
                     </form>
                     <p className='error-message' >{this.state.error}</p>
                 </div>
