@@ -1,6 +1,6 @@
 import { getToken } from './users-service'
 
-const BASE_URL = '/api/users'
+const BASE_URL = 'https://ribbit-project-four.herokuapp.com'
 
 export async function signUp(userData) {
     return sendRequest(BASE_URL, 'POST', userData)

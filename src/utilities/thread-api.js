@@ -1,8 +1,10 @@
 import { getToken } from "./users-service"
 
+const BASE_URL = 'https://ribbit-project-four.herokuapp.com'
+
 export function indexThread() {
     const token = getToken()
-    return fetch("/api/thread", {
+    return fetch(`${BASE_URL}/api/thread`, {
         method: "GET",
         headers: {
             Authorization: `Bearer ${token}`,
@@ -12,7 +14,7 @@ export function indexThread() {
 
 export function createThread(data) {
     const token = getToken()
-    return fetch("/api/thread/new",{
+    return fetch(`${BASE_URL}/api/thread/new`,{
         method: "POST",
         headers: {
             Accept: "application/json",
@@ -25,7 +27,7 @@ export function createThread(data) {
 
 export function deleteThread(threadId) {
     const token = getToken()
-    return fetch(`/api/thread/${threadId}`, {
+    return fetch(`${BASE_URL}/api/thread/${threadId}`, {
         method: "DELETE",
         headers : {
             Authorization: `Bearer ${token}`
@@ -35,7 +37,7 @@ export function deleteThread(threadId) {
 
 export function updateThread(data, threadId) {
     const token = getToken()
-    return fetch(`/api/thread/${threadId}`, {
+    return fetch(`${BASE_URL}/api/thread/${threadId}`, {
         method: "PATCH",
         headers : {
             Accept: "application/json",
@@ -51,7 +53,7 @@ export function updateThread(data, threadId) {
 
 export function showThread(threadId) {
     const token = getToken()
-    return fetch(`/api/thread/${threadId}`, {
+    return fetch(`${BASE_URL}/api/thread/${threadId}`, {
         method: "GET",
         headers : {
             Authorization: `Bearer ${token}`,
