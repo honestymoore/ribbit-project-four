@@ -6,7 +6,7 @@ import CreateAComment from "../CreateForms/CreateComment"
 import './Posts.css'
 export default function Posts({post, thread, user, setThreadArr}) {
 
-    const [isPostOwned, setIsPostOwned] = useState(
+    const [isPostOwned] = useState(
         post.owner === user._id ? true : false
     )
         
