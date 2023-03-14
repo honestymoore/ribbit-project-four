@@ -14,7 +14,7 @@ const app = express();
 app.use(logger('dev'));
 app.use(express.json());
 
-app.use(cors({ origin: process.env.CLIENT_ORIGIN || `http://localhost:3000` }))
+app.use(cors({ origin: process.env.PORT || `http://localhost:3000` }))
 
 // Configure both serve-favicon & static middleware
 // to serve from the production 'build' folder
